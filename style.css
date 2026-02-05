@@ -4,14 +4,39 @@
     grid-template-columns: 100% !important;
   }
   .content-float{
-    padding: 30px 5px !important;
+    padding: 30px 5px !important ;
     width: 80% !important;
     left: 50% !important;
   }
   .empty-div{
     display: none !important;
   }
+  .CTA{
+    display: grid;
+    grid-template-columns: 100% !important;
+    align-items: center;
+    padding: 5px 5px !important;
 
+
+    }
+    
+    .CTA-Content{
+    text-align: center !important;
+    }   
+
+    /* Reversing the CTA Section 2 */
+    .CTA2 > .CTA-Content {
+    order: 2;
+    }
+
+    .CTA2 > .Houseimg1 {
+    order: 1;
+    }
+    .property-list-grid{
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding: 10px 20px ;
+}
 
 }
 
@@ -22,8 +47,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Inter Tight", sans-serif;
 }
+/* body{
+    width: 80%;
+    margin: 0px auto;
+} */
 .grid{
     display: grid;
     grid-template-columns: auto auto;
@@ -101,4 +130,123 @@ p{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.CTA{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 20px 40px;
+
+
+}
+.CTA2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 20px 40px;
+
+
+}
+
+.Houseimg1{
+    padding: 20PX 10px;
+
+}
+.CTA-Content{
+    text-align: left;
+}
+
+.property-list-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 20px ;
+    margin:30px 0px;
+    gap: 10px;
+}
+.card{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.card-img{
+    
+    padding: 3px 3px;
+
+
+}
+
+.title_loc_av{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.imgblob{
+    position: relative;
+}
+.blob{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    background-color:#f5f5f5 ;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 10px 15px;
+
+}
+th{
+    font-size: 12px;
+}
+td{
+    font-size: 10px;
+}
+
+.request-btn{
+    background-color: transparent;
+    border: 1px solid #333333;
+    border-radius: 24px;
+    padding: 10px 22px;
+    color: #333333;
+    margin: 10px 0px 10px 0;
+
+}
+.Offer-btn{
+    background-color: #333333;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 22px;
+    color: white;
+    margin: 10px 0px 10px 0;
+}
+footer{
+    background-color: #F6F2EBF2;
+    text-align: center;
+    padding: 10px 20px;
+}
+li{
+    list-style: none
+
+}
+.social{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    text-align: center;
+    padding: 5px 0;
+    background-color: #F6F2EBF2;
+
+
+}
+.icon-circle{
+    background-color: #333333;
+    border-radius: 100%;
+    padding: 10px;
+}
+.icon-circle > img{
+    width: 100%;
+    height: 100%;
 }
